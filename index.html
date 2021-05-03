@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
     <title>Admin Reos</title>
 </head>
 <body>
-    <header class="bg-dark text-light p-2 container-fluid mb-2">
+    <header class="bg-dark text-light p-2 container-fluid mb-3">
         <div class="row">
             <h2 class="col">Administracion de Reos</h2>
             <div class="col">
@@ -16,9 +17,9 @@
             </div>
         </div>
     </header>
-    <main class="container">
+    <main class="container-fluid">
         <div class="row justify-content-between">
-            <div class="card col-7 bg-dark text-light">
+            <div class="card col-7 bg-dark text-light p-0">
                 <div class="card-header">
                     <h4>Registrar Reo</h4>
                 </div>
@@ -49,14 +50,19 @@
                     </form>
                 </div>
             </div>
-            <div class="card col-4">
+            <div class="card col-5 p-0">
                 <div class="card-header">
                     <h4>Reos</h4>
                 </div>
                 <div class="card-body">
                     <table class="table">
                         <thead>
-
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Detalle</th>
+                                <th>Ciudad</th>
+                                <th>Gravedad</th>
+                            </tr>
                         </thead>
                         <tbody id="tabla-reos">
 
