@@ -36,6 +36,16 @@
                            <label for="crimenes">Cantidad de Crimenes</label>
                            <input class="form-control" min="1" value="1" type="number" name="crimenes" id="crimenes">
                        </div>
+                       <div class="form-group">
+                           <label for="detalle">Detalle de Crimenes</label>
+                           <textarea id="detalle"></textarea>
+                       </div>
+                       <div class="form-group">
+                           <label for="ciudad">Ciudad</label>
+                           <select class="form-control" name="ciudad" id="ciudad">
+                           </select>
+                       </div>
+                       <button id="agregar-reo" type="button" class="btn btn-info" style="float: right;">Agregar</button>
                     </form>
                 </div>
             </div>
@@ -44,12 +54,20 @@
                     <h4>Reos</h4>
                 </div>
                 <div class="card-body">
+                    <table class="table">
+                        <thead>
 
+                        </thead>
+                        <tbody id="tabla-reos">
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
     </main>
-    <script src="sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="vendor/tinymce/js/tinymce/tinymce.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
