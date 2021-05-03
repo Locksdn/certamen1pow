@@ -31,11 +31,11 @@ const actualizarLista = ()=>{
 
         let gravedad = document.createElement('i');
         if(r.cantidad < 4){
-            gravedad.classList.add('fas', 'fa-user-ninja');
+            gravedad.classList.add('fas', 'fa-user-ninja', 'text-secondary');
         } else if (r.cantidad < 7){
-            gravedad.classList.add('fas', 'fa-exclamation-circle');
+            gravedad.classList.add('fas', 'fa-exclamation-circle', 'text-warning');
         } else if (r.cantidad < 16){
-            gravedad.classList.add('fas', 'fa-exclamation-triangle');
+            gravedad.classList.add('fas', 'fa-exclamation-triangle', 'text-danger');
         } else {
             gravedad.classList.add('fas', 'fa-skull-crossbones');
         }
@@ -82,6 +82,6 @@ document.querySelector('#agregar-reo').addEventListener('click', ()=>{
     Swal.fire(
         'Reo Agregado',
         'Se ha agregado un reo a la tabla exitosamente.',
-        'success'
+        'info'
       )
 });
